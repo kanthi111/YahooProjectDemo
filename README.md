@@ -56,6 +56,14 @@ Here is a brief overview of the test cases included in this project:
 Login Tests
 1. Account.robot: Verifies user account creation.
 
+##  Issues
+Despite following the instructions provided, I am facing some difficulties. Here are the details of the issue:
+
+1. Problem Description: Two factor Authentication I need to provide phone number to get OTP
+2. Steps Taken: Security reasons I am unable to automate this page and stop the test by logging in console
+3. Message: Add phone number
+4. Browser/Device Information: Google Chrome on Windows 10
+
 ## Contributing
 1. To contribute to this project, please follow these steps:
 2. Fork the repository.

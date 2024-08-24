@@ -25,7 +25,6 @@ Library    SeleniumLibrary
 ...    TXT_PHONE_NO=//*[@id='usernamereg-phone']
 
 
-
 *** Keywords ***
 Sign In To Yahoo Account
     [Documentation]    keyword to sign in yahoo account
