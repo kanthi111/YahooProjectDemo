@@ -17,7 +17,6 @@ This project is designed to automate the testing of an Yahoo finance website usi
 
 ## Features
 - Creating an account for yahoo
-- Automated tests for login, and logout
 
 ## Project Structure
 Sauce_demo_website_project/

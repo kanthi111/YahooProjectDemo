@@ -1,175 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-24T11:44:00.267516" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-08-24T12:10:46.243257" rpa="false" schemaversion="5">
 <suite id="s1" name="Account" source="c:\Projects\YahooProjectDemo\Tests\Account.robot">
 <test id="s1-t1" name="QAA-001 Create Yahoo Account" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2024-08-24T11:44:00.688082" level="INFO">Opening browser 'chrome' to base url 'https://finance.yahoo.com/'.</msg>
-<msg time="2024-08-24T11:44:01.536577" level="WARN">The chromedriver version (126.0.6478.55) detected in PATH at C:\Users\new\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.12\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.122); currently, chromedriver 127.0.6533.119 is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-24T12:10:46.687520" level="INFO">Opening browser 'chrome' to base url 'https://finance.yahoo.com/'.</msg>
+<msg time="2024-08-24T12:10:47.556905" level="WARN">The chromedriver version (126.0.6478.55) detected in PATH at C:\Users\new\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.12\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.122); currently, chromedriver 127.0.6533.119 is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>${url}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-24T11:44:00.687084" elapsed="8.505464"/>
+<status status="PASS" start="2024-08-24T12:10:46.687520" elapsed="9.400101"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-08-24T11:44:09.198968" elapsed="0.388138"/>
+<status status="PASS" start="2024-08-24T12:10:56.091631" elapsed="0.400853"/>
 </kw>
 <kw name="Validate Home page" owner="Account">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:11.191661" level="INFO">Current page contains text 'Yahoo Finance'.</msg>
+<msg time="2024-08-24T12:10:57.199501" level="INFO">Current page contains text 'Yahoo Finance'.</msg>
 <arg>Yahoo Finance</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-08-24T11:44:09.597532" elapsed="1.595128"/>
+<status status="PASS" start="2024-08-24T12:10:56.520219" elapsed="0.680281"/>
 </kw>
 <doc>validate the home page</doc>
-<status status="PASS" start="2024-08-24T11:44:09.597532" elapsed="1.595128"/>
+<status status="PASS" start="2024-08-24T12:10:56.519220" elapsed="0.681280"/>
 </kw>
 <kw name="Sign In To Yahoo Account" owner="Account">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${SIGNIN}[BTN_SIGN_IN]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-08-24T11:44:11.219085" elapsed="0.392275"/>
+<status status="PASS" start="2024-08-24T12:10:57.214892" elapsed="1.431134"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:11.613355" level="INFO">Clicking element '//*[contains(text(),'Sign in')]'.</msg>
+<msg time="2024-08-24T12:10:58.646554" level="INFO">Clicking element '//*[contains(text(),'Sign in')]'.</msg>
 <arg>${SIGNIN}[BTN_SIGN_IN]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:11.612359" elapsed="2.437259"/>
+<status status="PASS" start="2024-08-24T12:10:58.646554" elapsed="2.476218"/>
 </kw>
 <doc>keyword to sign in yahoo account</doc>
-<status status="PASS" start="2024-08-24T11:44:11.216761" elapsed="2.833856"/>
+<status status="PASS" start="2024-08-24T12:10:57.213481" elapsed="3.909291"/>
 </kw>
 <kw name="Click On Create Account" owner="Account">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${ACCOUNT}[BTN_CREATE_ACCOUNT]</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-08-24T11:44:14.056286" elapsed="0.084169"/>
+<status status="PASS" start="2024-08-24T12:11:01.128756" elapsed="0.099958"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:14.141443" level="INFO">Clicking element '//*[@id='createacc']'.</msg>
+<msg time="2024-08-24T12:11:01.228714" level="INFO">Clicking element '//*[@id='createacc']'.</msg>
 <arg>${ACCOUNT}[BTN_CREATE_ACCOUNT]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:14.140455" elapsed="0.698255"/>
+<status status="PASS" start="2024-08-24T12:11:01.228714" elapsed="0.679733"/>
 </kw>
 <doc>keyword to create yahoo account</doc>
-<status status="PASS" start="2024-08-24T11:44:14.054102" elapsed="0.785604"/>
+<status status="PASS" start="2024-08-24T12:11:01.127758" elapsed="0.780689"/>
 </kw>
 <kw name="Account Details Should Be Provided" owner="Account">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${ACCOUNT}[TXT_FIRST_NAME]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-24T11:44:14.853649" elapsed="0.130951"/>
+<status status="PASS" start="2024-08-24T12:11:01.919048" elapsed="0.095297"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:14.984600" level="INFO">Clicking element '//*[@id='usernamereg-firstName']'.</msg>
+<msg time="2024-08-24T12:11:02.015343" level="INFO">Clicking element '//*[@id='usernamereg-firstName']'.</msg>
 <arg>${ACCOUNT}[TXT_FIRST_NAME]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:14.984600" elapsed="0.101354"/>
+<status status="PASS" start="2024-08-24T12:11:02.015343" elapsed="0.099015"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:15.088297" level="INFO">Typing text 'Jenni' into text field '//*[@id='usernamereg-firstName']'.</msg>
+<msg time="2024-08-24T12:11:02.116605" level="INFO">Typing text 'Jenni' into text field '//*[@id='usernamereg-firstName']'.</msg>
 <arg>${ACCOUNT}[TXT_FIRST_NAME]</arg>
 <arg>Jenni</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:15.087215" elapsed="0.144307"/>
+<status status="PASS" start="2024-08-24T12:11:02.115354" elapsed="0.149380"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:15.232758" level="INFO">Typing text 'Marlin' into text field '//*[@id='usernamereg-lastName']'.</msg>
+<msg time="2024-08-24T12:11:02.265730" level="INFO">Typing text 'Marlin' into text field '//*[@id='usernamereg-lastName']'.</msg>
 <arg>${ACCOUNT}[TXT_LAST_NAME]</arg>
 <arg>Marlin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:15.231522" elapsed="0.162587"/>
+<status status="PASS" start="2024-08-24T12:11:02.264734" elapsed="0.162848"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:15.396113" level="INFO">Typing text 'marlinjenni' into text field '//*[@name='userId']'.</msg>
+<msg time="2024-08-24T12:11:02.428580" level="INFO">Typing text 'marlinjenni' into text field '//*[@name='userId']'.</msg>
 <arg>${ACCOUNT}[TXT_USER_ID]</arg>
 <arg>marlinjenni</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:15.395113" elapsed="0.178389"/>
+<status status="PASS" start="2024-08-24T12:11:02.427582" elapsed="0.188154"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:15.574500" level="INFO">Typing password into text field '//*[@id='usernamereg-password']'.</msg>
-<msg time="2024-08-24T11:44:15.648705" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-08-24T12:11:02.616775" level="INFO">Typing password into text field '//*[@id='usernamereg-password']'.</msg>
+<msg time="2024-08-24T12:11:02.859273" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${ACCOUNT}[TXT_PASSWORD]</arg>
 <arg>jenniMAR@1234576</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:15.574500" elapsed="0.211819"/>
+<status status="PASS" start="2024-08-24T12:11:02.615736" elapsed="0.384630"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:15.788168" level="INFO">Selecting options from selection list '//*[@id='usernamereg-month']' by label April.</msg>
+<msg time="2024-08-24T12:11:03.002379" level="INFO">Selecting options from selection list '//*[@id='usernamereg-month']' by label April.</msg>
 <arg>${ACCOUNT}[LST_MONTH]</arg>
 <arg>April</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-08-24T11:44:15.787169" elapsed="0.176851"/>
+<status status="PASS" start="2024-08-24T12:11:03.001384" elapsed="0.162198"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:15.965017" level="INFO">Typing text '12' into text field '//*[@id='usernamereg-day']'.</msg>
+<msg time="2024-08-24T12:11:03.165164" level="INFO">Typing text '12' into text field '//*[@id='usernamereg-day']'.</msg>
 <arg>${ACCOUNT}[TXT_DATE]</arg>
 <arg>12</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:15.965017" elapsed="0.138842"/>
+<status status="PASS" start="2024-08-24T12:11:03.163582" elapsed="0.145007"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:16.104859" level="INFO">Typing text '1997' into text field '//*[@id='usernamereg-year']'.</msg>
+<msg time="2024-08-24T12:11:03.311297" level="INFO">Typing text '1997' into text field '//*[@id='usernamereg-year']'.</msg>
 <arg>${ACCOUNT}[TXT_YEAR]</arg>
 <arg>1997</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:16.104859" elapsed="0.152959"/>
+<status status="PASS" start="2024-08-24T12:11:03.309595" elapsed="0.154821"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:16.258818" level="INFO">Clicking button '//*[text()='Next']'.</msg>
+<msg time="2024-08-24T12:11:03.465415" level="INFO">Clicking button '//*[text()='Next']'.</msg>
 <arg>${ACCOUNT}[BTN_NEXT]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-24T11:44:16.258818" elapsed="1.715836"/>
+<status status="PASS" start="2024-08-24T12:11:03.465415" elapsed="1.680492"/>
 </kw>
 <doc>Keyword to provide details</doc>
-<status status="PASS" start="2024-08-24T11:44:14.853649" elapsed="3.121005"/>
+<status status="PASS" start="2024-08-24T12:11:01.918041" elapsed="3.228589"/>
 </kw>
 <kw name="Phone Verification Details Should Be validated" owner="Account">
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-08-24T11:44:18.080002" level="INFO">Element '//*[@id='usernamereg-phone']' is displayed.</msg>
+<msg time="2024-08-24T12:11:05.246587" level="INFO">Element '//*[@id='usernamereg-phone']' is displayed.</msg>
 <arg>${PHONE}[TXT_PHONE_NO]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-24T11:44:17.984319" elapsed="0.096681"/>
+<status status="PASS" start="2024-08-24T12:11:05.149964" elapsed="0.096623"/>
 </kw>
-<msg time="2024-08-24T11:44:18.081000" level="INFO">${element_present} = True</msg>
+<msg time="2024-08-24T12:11:05.247622" level="INFO">${element_present} = True</msg>
 <var>${element_present}</var>
 <arg>Element Should Be Visible</arg>
 <arg>${PHONE}[TXT_PHONE_NO]</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2024-08-24T11:44:17.983321" elapsed="0.097679"/>
+<status status="PASS" start="2024-08-24T12:11:05.148625" elapsed="0.098997"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Element present status: ${element_present}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-08-24T11:44:18.081000" elapsed="0.000997"/>
+<status status="PASS" start="2024-08-24T12:11:05.247622" elapsed="0.000000"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Need to provide OTP,Security reasons stopping the test.</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-08-24T11:44:18.081997" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-24T12:11:05.247622" elapsed="0.007485"/>
 </kw>
 <arg>'${element_present}' == 'True'</arg>
 <arg>Log To Console</arg>
 <arg>Need to provide OTP,Security reasons stopping the test.</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-08-24T11:44:18.081997" elapsed="0.000000"/>
+<status status="PASS" start="2024-08-24T12:11:05.247622" elapsed="0.008203"/>
 </kw>
 <doc>keyword to validate phone verification details</doc>
-<status status="PASS" start="2024-08-24T11:44:17.982379" elapsed="0.099618"/>
+<status status="PASS" start="2024-08-24T12:11:05.147627" elapsed="0.109196"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-08-24T11:44:18.081997" elapsed="2.579095"/>
+<status status="PASS" start="2024-08-24T12:11:05.256823" elapsed="2.479749"/>
 </kw>
 <doc>User need to create an account.</doc>
 <tag>QAA-001</tag>
 <tag>Smoke</tag>
-<status status="PASS" start="2024-08-24T11:44:00.684024" elapsed="19.980909"/>
+<status status="PASS" start="2024-08-24T12:10:46.684479" elapsed="21.057902"/>
 </test>
-<status status="PASS" start="2024-08-24T11:44:00.281740" elapsed="20.389391"/>
+<status status="PASS" start="2024-08-24T12:10:46.254622" elapsed="21.487759"/>
 </suite>
 <statistics>
 <total>
@@ -184,6 +184,6 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-08-24T11:44:01.536577" level="WARN">The chromedriver version (126.0.6478.55) detected in PATH at C:\Users\new\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.12\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.122); currently, chromedriver 127.0.6533.119 is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-24T12:10:47.556905" level="WARN">The chromedriver version (126.0.6478.55) detected in PATH at C:\Users\new\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.12\chromedriver.exe might not be compatible with the detected chrome version (127.0.6533.122); currently, chromedriver 127.0.6533.119 is recommended for chrome 127.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
